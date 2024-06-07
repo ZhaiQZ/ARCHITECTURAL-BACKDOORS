@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b9f4a1d8-aa27-4a0a-a9a9-cf51633779bb" name="Ubuntu">
+        <fileTransfer rootFolder="/home/student/File/ZhaiQiangZhong" accessType="SFTP" host="10.15.150.26" port="22" sshConfigId="d80c27a5-58be-4a87-ab3c-eaf2ddeb6a96" sshConfig="student@10.15.150.26:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

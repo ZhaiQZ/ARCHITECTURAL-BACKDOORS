@@ -23,7 +23,6 @@ def save_image(dataset, trigger):
         if not trigger:
             filename = f"clean_img{i}_{label}.png"
             path = os.path.join('./clean_test_image', filename)
-            # img = Image.fromarray((img*255).astype('uint8'), mode='RGB')
             img.save(path)
         else:
             filename = f"poisoned_img{i}_{label}.png"

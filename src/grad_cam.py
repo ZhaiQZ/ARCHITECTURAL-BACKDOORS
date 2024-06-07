@@ -116,7 +116,7 @@ network.load_state_dict(torch.load(param_path))
 # 确定目标层和目标类别
 target_layer = [network.features[4][6]]
 # print(target_layer)
-targets = [ClassifierOutputTarget(1)]
+# targets = [ClassifierOutputTarget(1)]
 
 # 加载图像
 transform = transforms.Compose([

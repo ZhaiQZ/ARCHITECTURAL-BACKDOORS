@@ -9,3 +9,12 @@
 
 ## 使用GradCAM绘制了热力图
 可以给出单张图像的路径，对该图像绘制热力图，也可给出图像文件夹路径，对该目录下的所有图像绘制热力图
+```python
+def preprocess_image(img_path):
+    img = Image.open(img_path).convert('RGB')
+    input_tensor = transform(img).unsqueeze(0)
+    img_np = np.array(img, dtype='uint8')
+    img_np = img_np.astype(np.float32) / 255
+    return img_np, input_tensor
+```
+输入图像路径，返回numpy和tensor格式的图像

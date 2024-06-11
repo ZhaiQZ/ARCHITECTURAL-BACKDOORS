@@ -1,6 +1,7 @@
-## Pytorch Implementation of Architectural Backdoors in NeuralNetworks
+## 实现了一种结构后门
+使用vgg16网络在cifar10和svhn数据集上训练，并保存了模型参数
+`python save images.py`执行该条命令，可以保存图像
+`trigger = False`保存不带触发器的干净测试图像；`trigger = False`保存带触发器的毒化测试图像
 
-Run the code simply by using this command `python main.py`
-
-packages: `torch, torchsummary, numpy, matplotlib, PIL, open-cv`
 ## 使用GradCAM绘制了热力图
+可以给出单张图像的路径，对该图像绘制热力图，也可给出图像文件夹路径，对该目录下的所有图像绘制热力图

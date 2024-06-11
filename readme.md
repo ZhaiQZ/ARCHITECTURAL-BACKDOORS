@@ -18,3 +18,5 @@ def preprocess_image(img_path):
     return img_np, input_tensor
 ```
 输入图像路径，返回numpy和tensor格式的图像
+
+！[热力图展示][https://github.com/ZhaiQZ/ARCHITECTURAL-BACKDOORS/blob/master/relitu.png]

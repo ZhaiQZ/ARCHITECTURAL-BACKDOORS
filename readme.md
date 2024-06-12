@@ -8,7 +8,7 @@
 `trigger = False`保存带触发器的毒化测试图像
 
 ## 使用GradCAM绘制了热力图
-可以给出单张图像的路径，对该图像绘制热力图，也可给出图像文件夹路径，对该目录下的所有图像绘制热力图
+`python grad_cam.py`查看热力图。可以给出单张图像的路径，对该图像绘制热力图，也可给出图像文件夹路径，对该目录下的所有图像绘制热力图
 ```python
 def preprocess_image(img_path):
     img = Image.open(img_path).convert('RGB')
@@ -18,3 +18,5 @@ def preprocess_image(img_path):
     return img_np, input_tensor
 ```
 输入图像路径，返回numpy和tensor格式的图像
+### 热力图展示
+![热力图展示](https://github.com/ZhaiQZ/ARCHITECTURAL-BACKDOORS/blob/master/relitu.png)

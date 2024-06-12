@@ -18,6 +18,8 @@ test_data = torchvision.datasets.CIFAR10(root='~/data', train=False, download=Fa
 
 trigger = True
 
+
+
 def save_image(dataset, trigger):
     i = 0
     for img, label in dataset:
